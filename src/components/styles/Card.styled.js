@@ -6,7 +6,6 @@ const StyledCard = styled(motion.div)`
 	flex-direction: column;
 	min-height: 200px;
 	box-shadow: 0 4px 4px rgb(70, 70, 70);
-	gap: 2rem;
 	padding: 1rem 0 2rem 0;
 
 	& section {
@@ -38,12 +37,12 @@ const StyledCard = styled(motion.div)`
 		letter-spacing: 1px;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 1000px) {
 		& a {
 			margin: 1rem;
 		}
 		flex-direction: row;
-		max-width: 45%;
+		width: 45%;
 		justify-content: space-around;
 	}
 `;

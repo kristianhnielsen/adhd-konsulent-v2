@@ -6,7 +6,7 @@ export const Container = styled.div`
 	gap: 3rem;
 	margin-bottom: 3rem;
 
-	@media (min-width: 700px) {
+	@media (min-width: 1000px) {
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
