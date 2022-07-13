@@ -12,6 +12,9 @@ import ReadMore from "./ReadMore";
 import Testemonials from "./Testemonials";
 
 export default function Consultation() {
+	// const ref = useRef()
+	// const inView = useInView(ref);
+
 	return (
 		<>
 			<Helmet>

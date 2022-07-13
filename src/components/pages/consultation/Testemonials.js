@@ -3,6 +3,8 @@ import {useState} from "react";
 import styled from "styled-components";
 import {nanoid} from "nanoid";
 
+import {motion} from "framer-motion";
+
 const QuoteContainer = styled.section`
 	display: flex;
 	flex-direction: column;
@@ -29,7 +31,7 @@ const QuoteContainer = styled.section`
 	}
 `;
 
-const Quote = styled.div`
+const Quote = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
@@ -75,31 +77,49 @@ export default function Testemonials() {
 		},
 	]);
 
+	const animations = {
+		offscreen: {
+			x: -100,
+			opacity: 0,
+		},
+		onscreen: {
+			x: 0,
+			opacity: 1,
+			transition: {duration: 0.8, delay: 0.4},
+		},
+	};
+
 	return (
 		<QuoteContainer>
 			<h2>Hvad andre siger:</h2>
-			<section>
+			<motion.section>
 				{quotesList.map((quote) => (
-					<Quote key={nanoid()}>
-						<svg
+					<Quote
+						key={nanoid()}
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						viewport={{once: false, amount: 0.2}}
+						variants={animations}
+					>
+						<motion.svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 448 512"
 							aria-label="quotation mark"
 						>
 							<path d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
-						</svg>
-						<p>{quote.quote}</p>
-						<p>- {quote.author}</p>
-						<svg
+						</motion.svg>
+						<motion.p>{quote.quote}</motion.p>
+						<motion.p>- {quote.author}</motion.p>
+						<motion.svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 448 512"
 							aria-label="quotation mark"
 						>
 							<path d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
-						</svg>
+						</motion.svg>
 					</Quote>
 				))}
-			</section>
+			</motion.section>
 		</QuoteContainer>
 	);
 }
