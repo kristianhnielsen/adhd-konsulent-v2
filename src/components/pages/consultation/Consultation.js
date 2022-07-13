@@ -40,21 +40,8 @@ export default function Consultation() {
 							Lær at hjælpe dit barn med at regulere deres
 							følelser
 						</p>
-						<div>
-							<ul>
-								<li>
-									Lær hvordan du kan styrke dit barns selvværd
-								</li>
-								<li>
-									Forstå dit barns adfærd og reaktionsmønstre
-								</li>
-								<li>Lær at forebygge og håndtere konflikter</li>
-								<li>
-									Lær at hjælpe dit barn med at regulere
-									følelser
-								</li>
-							</ul>
-						</div>
+						<p>Forstå dit barns adfærd og reaktionsmønstre</p>
+						<p>Lær at forebygge og håndtere konflikter</p>
 						<MidHeader>
 							Jeg tilrettelægger <u>altid</u> forløbet sammen med
 							jer og jeres familie.
