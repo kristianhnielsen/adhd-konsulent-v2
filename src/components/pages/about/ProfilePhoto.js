@@ -7,6 +7,7 @@ const StyledProfilePhoto = styled.section`
 	& img {
 		border-radius: 50%;
 		width: 60%;
+		height: fit-content;
 		box-shadow: 0 2px 5px black;
 	}
 `;
