@@ -1,4 +1,3 @@
-import React from "react";
 import Headline from "../../shared/headline/Headline";
 import {Helmet} from "react-helmet";
 import NameCard from "./NameCard";

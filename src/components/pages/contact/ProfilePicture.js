@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Photo from "../../assets/img/headshot-tall.png";
 

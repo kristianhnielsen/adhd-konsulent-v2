@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React from "react";
 import Profile from "../../assets/img/headshot-square.jpeg";
 
 const StyledProfilePhoto = styled.section`

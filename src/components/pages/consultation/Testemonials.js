@@ -1,8 +1,6 @@
-import React from "react";
 import {useState} from "react";
 import styled from "styled-components";
 import {nanoid} from "nanoid";
-
 import {motion} from "framer-motion";
 
 const QuoteContainer = styled.section`

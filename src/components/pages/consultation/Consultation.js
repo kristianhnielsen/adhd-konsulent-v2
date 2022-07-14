@@ -1,4 +1,3 @@
-import React from "react";
 import Headline from "../../shared/headline/Headline";
 import {
 	Container,
