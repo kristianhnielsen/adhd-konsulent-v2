@@ -1,4 +1,3 @@
-import React from "react";
 import {ContactItem} from "../../styles/Contact.styled";
 
 export default function NameCard() {
