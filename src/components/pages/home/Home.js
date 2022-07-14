@@ -21,6 +21,11 @@ export default function Home() {
 			transition: {
 				duration: 0.1,
 			},
+			scale: 1.2,
+		},
+		tap: {
+			scale: 0.8,
+			transition: {duration: 0.1},
 		},
 	};
 	const infoAnimations = {
@@ -32,6 +37,11 @@ export default function Home() {
 			transition: {
 				duration: 0.1,
 			},
+			scale: 1.2,
+		},
+		tap: {
+			scale: 0.8,
+			transition: {duration: 0.1},
 		},
 	};
 
@@ -58,6 +68,7 @@ export default function Home() {
 						to="/kontakt"
 						variants={ctaAnimations}
 						whileHover="hover"
+						whileTap="tap"
 					>
 						Gratis afklarende samtale
 					</CTAButton>
@@ -65,6 +76,7 @@ export default function Home() {
 						to="/radgivning"
 						variants={infoAnimations}
 						whileHover="hover"
+						whileTap="tap"
 					>
 						Mere information
 					</InfoButton>
