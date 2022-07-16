@@ -1,11 +1,10 @@
-import React from "react";
 import Headline from "../../shared/headline/Headline";
+import {Helmet} from "react-helmet";
 import NameCard from "./NameCard";
 import PhoneCard from "./PhoneCard";
 import EmailCard from "./EmailCard";
-import {Helmet} from "react-helmet";
 import {Container} from "../../styles/Contact.styled";
-const ProfilePicture = React.lazy(() => import("./ProfilePicture"));
+import ProfilePicture from "./ProfilePicture";
 
 export default function Contact() {
 	return (

@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import {useState} from "react";
+import styled from "styled-components";
 import {nanoid} from "nanoid";
 import {motion} from "framer-motion";
 

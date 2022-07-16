@@ -1,5 +1,5 @@
-import React from "react";
 import {Helmet} from "react-helmet";
+import FamilyInHands from "../../assets/svg/FamilyInHands";
 import {
 	ButtonContainer,
 	Container,
@@ -9,9 +9,6 @@ import {
 	InfoButton,
 } from "../../styles/Home.styled";
 import {useTheme} from "styled-components";
-const FamilyInHands = React.lazy(() =>
-	import("../../assets/svg/FamilyInHands")
-);
 
 export default function Home() {
 	const theme = useTheme();
