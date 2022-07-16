@@ -6,14 +6,13 @@ import {
 	MidHeader,
 } from "../../styles/Consultation.styled";
 import {Helmet} from "react-helmet";
-import FathersEmbrace from "../../assets/svg/FatherEmbrace";
 import ReadMore from "./ReadMore";
 import Testemonials from "./Testemonials";
+const FathersEmbrace = React.lazy(() =>
+	import("../../assets/svg/FatherEmbrace")
+);
 
 export default function Consultation() {
-	// const ref = useRef()
-	// const inView = useInView(ref);
-
 	return (
 		<>
 			<Helmet>

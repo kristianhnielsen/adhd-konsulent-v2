@@ -4,7 +4,7 @@ import NameCard from "./NameCard";
 import PhoneCard from "./PhoneCard";
 import EmailCard from "./EmailCard";
 import {Container} from "../../styles/Contact.styled";
-import ProfilePicture from "./ProfilePicture";
+const ProfilePicture = React.lazy(() => import("./ProfilePicture"));
 
 export default function Contact() {
 	return (

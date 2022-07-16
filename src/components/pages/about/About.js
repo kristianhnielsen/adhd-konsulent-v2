@@ -1,8 +1,8 @@
-import {Helmet} from "react-helmet";
 import Headline from "../../shared/headline/Headline";
 import EducationList from "./EducationList";
-import ProfilePhoto from "./ProfilePhoto";
 import {Container} from "../../styles/About.styled";
+import {Helmet} from "react-helmet";
+const ProfilePhoto = React.lazy(() => import("./ProfilePhoto"));
 
 const About = () => {
 	return (

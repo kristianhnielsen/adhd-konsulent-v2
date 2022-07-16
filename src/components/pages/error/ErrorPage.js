@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import ErrorImg from "../../assets/svg/404";
 import {Link} from "react-router-dom";
+const ErrorImg = React.lazy(() => import("../../assets/svg/404"));
 
 const Container = styled.main`
 	display: flex;
