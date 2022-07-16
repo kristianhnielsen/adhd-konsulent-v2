@@ -1,3 +1,4 @@
+import React from "react";
 import Headline from "../../shared/headline/Headline";
 import EducationList from "./EducationList";
 import {Container} from "../../styles/About.styled";

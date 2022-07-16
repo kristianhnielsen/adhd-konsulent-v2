@@ -1,4 +1,7 @@
+import React from "react";
 import Headline from "../../shared/headline/Headline";
+import ReadMore from "./ReadMore";
+import Testemonials from "./Testemonials";
 import {
 	Container,
 	Image,
@@ -6,8 +9,6 @@ import {
 	MidHeader,
 } from "../../styles/Consultation.styled";
 import {Helmet} from "react-helmet";
-import ReadMore from "./ReadMore";
-import Testemonials from "./Testemonials";
 const FathersEmbrace = React.lazy(() =>
 	import("../../assets/svg/FatherEmbrace")
 );
