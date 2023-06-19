@@ -16,6 +16,11 @@ export default function Contact() {
           name="description"
           content="Kontakt og bestil tid ved ADHD og autisme specialist Lasse Nielsen"
         />
+        <script
+          defer
+          data-domain="adhd-konsulent.dk"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </Helmet>
       <Headline text="Kontakt" />
       <Container>
