@@ -17,9 +17,9 @@ export default function Price() {
       <Container>
         <PrimeCard title="Afklarende Samtale" price="GRATIS" />
 
-        <StandardCard title="Familie Pakke" price="4.000 kr" sessions={10} />
-        <StandardCard title="Forældre Pakke" price="2.000 kr" sessions={5} />
-        <StandardCard title="Forældre Rådgivning" price="500 kr" sessions={1} />
+        <StandardCard title="Familie Pakke" price="6.000 kr" sessions={10} />
+        <StandardCard title="Forældre Pakke" price="3.000 kr" sessions={5} />
+        <StandardCard title="Forældre Rådgivning" price="695 kr" sessions={1} />
       </Container>
     </>
   );
